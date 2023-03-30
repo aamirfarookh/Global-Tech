@@ -5,14 +5,14 @@ const cors = require("cors")
 const app = express();
 const {userRouter} = require("./routes/user.route");
 const { productRouter } = require("./routes/product.route");
-
+const { cartRouter } = require("./routes/cart.route")
 app.use(express.json());
 app.use(cors());
 
 
 app.use("/users",userRouter)
 app.use("/products",productRouter)
-
+app.use("/cart",cartRouter)
 
 
 

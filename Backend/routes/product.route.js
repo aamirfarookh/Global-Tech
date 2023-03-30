@@ -1,6 +1,7 @@
 const express = require("express");
 const { userAuth, adminAuth } = require("../middlewares/auth.middleware");
 const { ProductModel } = require("../models/product.model");
+const { UserModel } = require("../models/user.model");
 
 const productRouter = express.Router()
 
@@ -22,8 +23,9 @@ productRouter.post("/add",adminAuth,async(req,res)=>{
     }
 });
 
+// ROUTE FOR GETTING ALL THE PRODUCTS
 productRouter.get("/",userAuth,async(req,res)=>{
-    const {category,search,sort,page} = req.query
+    let {category,search,sort,page,limit} = req.query
     let query = {};
     if(category){
         query.category = category
@@ -32,24 +34,29 @@ productRouter.get("/",userAuth,async(req,res)=>{
         query.name ={$regex:search,$options:"i"}
     }
     
-    let sortValue;
-        if(sort==="asc"){
-            sortValue =1
-        }
-        else if(sort === "desc"){
-            sortValue = -1
-        }
-    
-    const limit = 2;
-    const skip = (+page -1)*limit
+    let value;
+    if(sort === "asc"){
+        value= 1
+    }
+    else if(sort==="desc"){
+        value = -1
+    }
+
+    const skip = (+page -1)*limit 
     
     try {
-        const products =await ProductModel.find(query).sort({price:sortValue}).skip(skip).limit(limit);
+        const products =await ProductModel.find(query).sort({price:value}).skip(skip).limit(limit);
         res.status(200).send(products)
     } catch (error) {
         res.status(400).send({msg:error.message})
     }
 })
+
+
+
+
+
+
 
 module.exports = {productRouter}
 
