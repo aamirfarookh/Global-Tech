@@ -6,7 +6,7 @@ const userAuth = (req,res,next)=>{
 
       
   if (!token) {
-    return res.status(403).json({ message: 'No token provided.' });
+    return res.status(403).json({ message: 'Authorization failed, No token provided' });
   }
 
   jwt.verify(token, process.env.key, (err, decoded) => {

@@ -24,7 +24,7 @@ productRouter.post("/add",adminAuth,async(req,res)=>{
 });
 
 // ROUTE FOR GETTING ALL THE PRODUCTS
-productRouter.get("/",userAuth,async(req,res)=>{
+productRouter.get("/", async(req,res)=>{
     let {category,search,sort,page,limit} = req.query
     let query = {};
     if(category){
@@ -46,7 +46,10 @@ productRouter.get("/",userAuth,async(req,res)=>{
     
     try {
         const products =await ProductModel.find(query).sort({price:value}).skip(skip).limit(limit);
-        res.status(200).send(products)
+        req.headers.count = 13
+        res.status(200).send({data:products,  "total": 13,
+        "limit": 3,
+        "page":page})
     } catch (error) {
         res.status(400).send({msg:error.message})
     }
