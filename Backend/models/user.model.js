@@ -40,7 +40,7 @@ const userSchema = new mongoose.Schema({
       trim: true
     },
     zipCode: {
-      type: Number,
+      type: String,
       required: true,
       trim: true
     },
@@ -56,8 +56,10 @@ const userSchema = new mongoose.Schema({
     trim: true
   },
   orders: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Order'
+     product: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Product'
+    }
   }],
   cart: [{
     product: {
