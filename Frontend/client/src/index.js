@@ -35,15 +35,29 @@ removebag.addEventListener('click', () => {
     bag.classList.remove('bag-active');
     setabag.classList.remove('seta-active');
 })
-let token=document.cookie.split("=")[1]
-if(token){
+let token=localStorage.getItem("loginToken")
+if(token!=1){
     document.getElementById("ltoggle").innerText="Sign Out"
-}else{
+    const displayName=localStorage.getItem("username")
+   console.log(displayName);
+   document.getElementById("dname").innerText="Hello "+displayName;
+    
+}else if(token==1){
     document.getElementById("ltoggle").innerText="Sign in"
+    document.getElementById("dname").innerText="Account";
+    document.getElementById("ltoggle").href="login.html"
 }
-const displayName=document.cookie.split("=")[0]
-console.log(displayName);
-document.getElementById("dname").innerText=displayName||"Account";
+
+
+document.getElementById("ltoggle").addEventListener("click",()=>{
+    localStorage.setItem("loginToken",1)
+    document.getElementById("dname").innerText = "Account"
+    document.getElementById("ltoggle").innerText="Sign in"
+    confirm("Are you sure to Sign Out?")
+    document.getElementById("ltoggle").href = "login.html"
+   
+})
+
 
 // async function getOrders(){
 //     let res=await fetch("https://pear-z5ta.onrender.com/api/cart/",{

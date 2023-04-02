@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Tech | Store</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="styles/store.css">
+    <link rel="stylesheet" href="styles/register.css">
 </head>
 <body>
     <header class="header">
@@ -104,100 +104,53 @@
         </div>
     </header>
     
-    <main>
+    <div id="mainc">
+        <h1>Create Your Global ID</h1>
+        <p>One Global ID is all you need to access all Global services.
+            You already have an Alpine ID <a href="login.html">Log in here ></a></p>
+    </div>
+    <form action="">
+        <input type="email" required id="email" placeholder="name@example.com" value="test@gmail.com">
+        <p id="pearID">This will be your new Global ID.</p>
+        <div><input type="text" required id="firstname" placeholder="first name" value="test">
+          <input type="text" id="lastname" required placeholder="last name" value="user"></div>
+        <br>
+        <input type="password" required id="password" placeholder="password" value="test123" >
+        <input type="tel" id="phone-number" placeholder="Phone Number" required value="8899990966">
+        <br>
+        <hr>
+        <div id="dob_div">
+          <label for="">Date of Birth</label>
+          <input id="dob" type="date" required value="22/01/1998">
+        </div>
+        <hr>
+        <label for="">ADDRESS</label>
+        <input type="text" placeholder="Street name" id="street" required value="test-street">
+        <input type="text" placeholder="City name" id="city" required value="test-city">
+        <input type="text" placeholder="State" id="state" required value="test-state">
+        <input type="text" placeholder="PIN code" id="pincode" required value="test-pincode">
+        <br>
+        <select name="" id="country">
+          <option value="India">India</option>
+          <option value="Indonesia">Indonesia</option>
+          <option value="Iraq">Iraq</option>
+          <option value="Ireland">Ireland</option>
+          <option value="Isle of Man">Isle of Man</option>
+          <option value="Israel">Israel</option>
+          <option value="Italy">Italy</option>
+          <option value="Jamaica">Jamaica</option>
+          <option value="Japan">Japan</option>
+          <option value="Jersey">Jersey</option>
+          <option value="Jordan">Jordan</option>
+          <option value="Kazakhstan">Kazakhstan</option>
+          <option value="Kenya">Kenya</option>
+        </select>
+        <input type="submit" value="Register" id="submit">
+      </form>
       
-     <section class="slideshow">
-        <div class="heading">
-            <h1>Store.<span>The best way to buy the products you love</span></h1>
-        </div>
-
-            <div class="slider">
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-14-16-mac-nav-202301?wid=200&hei=130&fmt=png-alpha&.v=1670959891635">
-                <h4>Mac</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-iphone-nav-202209_GEO_US?wid=200&hei=130&fmt=png-alpha&.v=1661027785546">
-                <h4>iPhone</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-ipad-nav-202210?wid=200&hei=130&fmt=png-alpha&.v=1664912135437">
-                <h4>iPad</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-watch-nav-202303?wid=200&hei=130&fmt=png-alpha&.v=1677701613598">
-                <h4>iWatches</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-airpods-nav-202209?wid=200&hei=130&fmt=png-alpha&.v=1660676485885">
-                <h4>Airpods</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-holiday-giftcards-asit-agc-nav-202111?wid=200&hei=130&fmt=png-alpha&.v=1653339351054">
-                <h4>Apple Giftcard</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-airtags-nav-202108?wid=200&hei=130&fmt=png-alpha&.v=1625783380000">
-                <h4>Airtag</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-homepod-nav-202301?wid=200&hei=130&fmt=png-alpha&.v=1670389216654">
-                <h4>Homepod</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-accessories-nav-202303?wid=200&hei=130&fmt=png-alpha&.v=1677172796005">
-                <h4>Accessories</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-appletv-nav-202210?wid=200&hei=130&fmt=png-alpha&.v=1664628458484">
-                <h4>Apple TV 4K</h4>
-              </div>
-              
-            </div>
-            
-          
-          
-     </section>
-
-     <section id ="alert-notification">
+      <div id="alert-notification">
         <!-- Here all the alerts will be appended from DOM -->
-     </section>
-   
-    <section class="product-section">
-        <div class="filter">
-            <div class="search">
-                <h3>Search for your favorites</h3>
-                <input type="text" id="search-input">
-                <button id="search-btn">Search</button>
-            </div>
-         <div class="category-filter">
-            <h4>Filter Products By Category</h4>
-            <select name="" id="category-filter">
-                
-                <option value="">Select a Category</option>
-                <option value="Mobile Phones">iPhones</option>
-                <option value="Laptops">Laptops/Desktops</option>
-            </select>
-         </div>
-         <div class="sort-filter">
-            <h4>Sort Products By Price</h4>
-            <select name="" id="sort-filter">
-                <option value="">Select a Category</option>
-                <option value="asc">Low to High</option>
-                <option value="desc">High to Low</option> 
-            </select>
-         </div>
-        </div>
-
-   <div class="product-container">
-    <div id="product-container"></div>
-    <div id="pagination"></div>
-   </div>
-   <!-- <div id="pagination"></div> -->
-   
-    </section>
-    </main>
-
+    </div>
 
     <footer class="background-footer">
         <section class="limited-area text-footer">
@@ -496,7 +449,7 @@
     </footer>
 </body>
 <script src="./src/index.js"></script>
-<script src="./src/store.js"></script>
+<script src="./src/register.js"></script>
 </html>
 
 

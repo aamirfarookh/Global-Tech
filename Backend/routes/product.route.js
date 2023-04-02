@@ -41,13 +41,13 @@ productRouter.get("/", async(req,res)=>{
     else if(sort==="desc"){
         value = -1
     }
-
     const skip = (+page -1)*limit 
     
     try {
+        const totalProducts = await ProductModel.find(query)
         const products =await ProductModel.find(query).sort({price:value}).skip(skip).limit(limit);
         req.headers.count = 13
-        res.status(200).send({data:products,  "total": 13,
+        res.status(200).send({data:products,  "total": totalProducts.length,
         "limit": 3,
         "page":page})
     } catch (error) {

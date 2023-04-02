@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Tech | Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="styles/store.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <title>Global Tech | Secure Sign-in</title>
+    <link rel="stylesheet" href="./styles/login.css">
+  </head>
+  <body>
     <header class="header">
         <div class="limited-area accountin-header">
             <nav class="nav-header">
@@ -26,7 +26,7 @@
                             <a class="svg-apple" href="index.html">
                                 <li>
                                     <img
-                                        src="./logo.png">
+                                        src="./logo.png"/>
                                 </li>
                             </a>
                             <a href="./store.html">
@@ -92,7 +92,7 @@
                                     <li><a href="#">Saved Items</a></li>
                                     <li><a href="#">Orders</a></li>
                                     <li><a href="#" id="dname">Account</a></li>
-                                    <li><a href="#" id="ltoggle">Sign in</a></li>
+                                    <li><a href="" id="ltoggle">Sign in</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -103,102 +103,30 @@
         </div>
         </div>
     </header>
-    
     <main>
-      
-     <section class="slideshow">
-        <div class="heading">
-            <h1>Store.<span>The best way to buy the products you love</span></h1>
+        <div id="head">
+            <h1>Sign in for faster checkout.</h1>
         </div>
-
-            <div class="slider">
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-14-16-mac-nav-202301?wid=200&hei=130&fmt=png-alpha&.v=1670959891635">
-                <h4>Mac</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-iphone-nav-202209_GEO_US?wid=200&hei=130&fmt=png-alpha&.v=1661027785546">
-                <h4>iPhone</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-ipad-nav-202210?wid=200&hei=130&fmt=png-alpha&.v=1664912135437">
-                <h4>iPad</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-watch-nav-202303?wid=200&hei=130&fmt=png-alpha&.v=1677701613598">
-                <h4>iWatches</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-airpods-nav-202209?wid=200&hei=130&fmt=png-alpha&.v=1660676485885">
-                <h4>Airpods</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-holiday-giftcards-asit-agc-nav-202111?wid=200&hei=130&fmt=png-alpha&.v=1653339351054">
-                <h4>Apple Giftcard</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-airtags-nav-202108?wid=200&hei=130&fmt=png-alpha&.v=1625783380000">
-                <h4>Airtag</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-homepod-nav-202301?wid=200&hei=130&fmt=png-alpha&.v=1670389216654">
-                <h4>Homepod</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-accessories-nav-202303?wid=200&hei=130&fmt=png-alpha&.v=1677172796005">
-                <h4>Accessories</h4>
-              </div>
-              <div class="slider-item">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-appletv-nav-202210?wid=200&hei=130&fmt=png-alpha&.v=1664628458484">
-                <h4>Apple TV 4K</h4>
-              </div>
-              
-            </div>
-            
-          
-          
-     </section>
-
-     <section id ="alert-notification">
-        <!-- Here all the alerts will be appended from DOM -->
-     </section>
-   
-    <section class="product-section">
-        <div class="filter">
-            <div class="search">
-                <h3>Search for your favorites</h3>
-                <input type="text" id="search-input">
-                <button id="search-btn">Search</button>
-            </div>
-         <div class="category-filter">
-            <h4>Filter Products By Category</h4>
-            <select name="" id="category-filter">
-                
-                <option value="">Select a Category</option>
-                <option value="Mobile Phones">iPhones</option>
-                <option value="Laptops">Laptops/Desktops</option>
-            </select>
-         </div>
-         <div class="sort-filter">
-            <h4>Sort Products By Price</h4>
-            <select name="" id="sort-filter">
-                <option value="">Select a Category</option>
-                <option value="asc">Low to High</option>
-                <option value="desc">High to Low</option> 
-            </select>
-         </div>
+        <div id="alert-notification">
+            <!-- Here all the alerts will be appended from DOM -->
         </div>
-
-   <div class="product-container">
-    <div id="product-container"></div>
-    <div id="pagination"></div>
-   </div>
-   <!-- <div id="pagination"></div> -->
-   
-    </section>
+        <div id="lform">
+            <h2>Sign in to Global Tech Store</h2>
+            <input type="email" id="email" placeholder="Global ID" required/>
+            <input type="password" id="pass" placeholder="Global Password" required/>
+            <input type="button" value="Login" id="lbtn">
+        </div>
+        <div id="remember_me">
+            <input type="checkbox"><b class="gray">Remember me</b>
+          </div>
+        </div>
+        <div id="parent_div_scnd">
+            <hr size="1">
+            <a href="" ><span class="forgot">Forgot your ID or password?<span class="material-symbols-outlined"> arrow_outward</span></span></a>
+            <br />
+            <a href="register.html" class="log"><span class="gray">Don’t have a Global ID?</span><span>Create yours now.<span class="material-symbols-outlined"> arrow_outward</span></span></a>
+        </div>
     </main>
-
-
     <footer class="background-footer">
         <section class="limited-area text-footer">
             <p>1. You must have an Apple Watch. For new subscribers only. BRL 29.90 per month after the trial period.
@@ -494,15 +422,7 @@
             </div>
         </div>
     </footer>
-</body>
-<script src="./src/index.js"></script>
-<script src="./src/store.js"></script>
+  <script type="module" src="./src/index.js"></script>
+  <script src="./src/login.js"></script>
+  </body>
 </html>
-
-
-
-
-
-
-
-
