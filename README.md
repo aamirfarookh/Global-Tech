@@ -16,7 +16,7 @@ An individual project built and executed in 5 days.
 
 <h1>BACKEND DEPLOYED LINK</h1>  https://lazy-blue-cockroach-sari.cyclic.app/
 
-<h2> Some Snaps </h2>
+<h1>SOME SNAPS</h1>
 
 <h2>Home Page</h2>
 
