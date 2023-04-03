@@ -15,3 +15,12 @@ An individual project built and executed in 5 days.
 <h1>LIVE DEMO</h1> https://zippy-jalebi-44c224.netlify.app/index.html
 
 <h1>BACKEND DEPLOYED LINK</h1>  https://lazy-blue-cockroach-sari.cyclic.app/
+
+<h2> Some Snaps </h2>
+
+
+![Screenshot 2023-04-03 115330](https://user-images.githubusercontent.com/107558641/229428600-88b2ad1e-6452-4d8e-a2c0-4a11679ca169.png)
+![Screenshot 2023-04-03 115438](https://user-images.githubusercontent.com/107558641/229428638-5c5fb098-cb3a-4c85-ba03-fcd723bb9bff.png)
+![Screenshot 2023-04-03 115714](https://user-images.githubusercontent.com/107558641/229428683-5bd2d45f-c30f-4efb-a22e-2b75a1fc57c9.png)
+![Screenshot 2023-04-03 115544](https://user-images.githubusercontent.com/107558641/229428730-fb07d7f4-028c-46fd-9233-f67253dbab0b.png)
+![Screenshot 2023-04-03 115812](https://user-images.githubusercontent.com/107558641/229428767-90b9ec0c-0b9c-4696-9885-3b6fde0c9dd0.png)
