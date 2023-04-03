@@ -19,12 +19,21 @@ An individual project built and executed in 5 days.
 <h2> Some Snaps </h2>
 
 <h3>Home Page</h3>
+
 ![Screenshot 2023-04-03 115330](https://user-images.githubusercontent.com/107558641/229428600-88b2ad1e-6452-4d8e-a2c0-4a11679ca169.png)
+
 <h3>Footer</h3>
+
 ![Screenshot 2023-04-03 115438](https://user-images.githubusercontent.com/107558641/229428638-5c5fb098-cb3a-4c85-ba03-fcd723bb9bff.png)
+
 <h3>Login Page</h3>
+
 ![Screenshot 2023-04-03 115714](https://user-images.githubusercontent.com/107558641/229428683-5bd2d45f-c30f-4efb-a22e-2b75a1fc57c9.png)
+
 <h3>Store</h3>
+
 ![Screenshot 2023-04-03 115544](https://user-images.githubusercontent.com/107558641/229428730-fb07d7f4-028c-46fd-9233-f67253dbab0b.png)
+
 <h3>Cart Page</h3>
+
 ![Screenshot 2023-04-03 115812](https://user-images.githubusercontent.com/107558641/229428767-90b9ec0c-0b9c-4696-9885-3b6fde0c9dd0.png)
