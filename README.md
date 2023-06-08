@@ -12,7 +12,7 @@ Areas Of Responsibility: Worked closely to optimize and implement the frontend a
 
 An individual project built and executed in 5 days.
 
-<h1>LIVE DEMO</h1> https://global-tech-apple.netlify.app
+<h1>LIVE DEMO</h1> https://tech-world-apple.netlify.app
 
 <h1>BACKEND DEPLOYED LINK</h1>  https://lazy-blue-cockroach-sari.cyclic.app/
 
