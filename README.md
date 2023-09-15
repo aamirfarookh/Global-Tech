@@ -12,7 +12,7 @@ Areas Of Responsibility: Worked closely to optimize and implement the front and 
 
 An individual project built and executed in 5 days.
 
-<h1>LIVE DEMO</h1> https://thetechworld.netlify.app/
+<h1>LIVE DEMO</h1> https://appleincclone.netlify.app/
 
 <h1>BACKEND DEPLOYED LINK</h1>  https://lazy-blue-cockroach-sari.cyclic.app/
 
